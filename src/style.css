@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+
+header {
+  background-color: #f8f8f8;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navigation */
+
+nav {
+  margin-right: 30px;
+}
+
+.navigation-ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  padding: 8px 15px;
+  margin-right: 10px;
+  border-radius: 20px;
+  transition: background-color .4s ease-in-out;
+}
+
+nav li:hover {
+  background-color: white;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #080708;
+}
+
+/* Header Logo */
+
+.header-logo {
+  margin-left: 30px;
+}
+
+.header-logo h1 {
+  font-size: 28px;
+  color: #3A86FF;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.header-logo h1:hover {
+  opacity: 0.8;
+}
+
+/* Input in the Header */
+
+.input-search {
+  padding: 8px 10px;
+  outline: none;
+  border-radius: 20px;
+  border: none;
+  margin-right: 5px;
+}
+
+.nav-input-button {
+  padding: 7px 10px;
+  border: none;
+  background-color: #3A86FF;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.6s ease;
+}
+
+.nav-input-button:hover {
+  background: #c5d6fc;
+  color: #3A86FF;
+}
+
+/* Adaptive for tablets */
+
+@media screen and (max-width: 768px) {
+  nav {
+    margin-right: 20px;
+  }
+
+  .navigation-ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin-right: 0;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+}
+
+/* Adaptive for phones */
+
+@media screen and (max-width: 480px) {
+  header {
+    padding: 10px 0;
+  }
+
+  .header-logo h1 {
+    font-size: 24px;
+  }
+
+  .input-search {
+    padding: 5px 8px;
+  }
+
+  .nav-input-button {
+    padding: 5px 8px;
+  }
+}
+
